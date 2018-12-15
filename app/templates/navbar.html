@@ -1,0 +1,57 @@
+<!--==========================
+  Header
+============================-->
+<!-- <header class="p-3 mb-2 bg-secondary text-white" id="header"> -->
+<header style='background-color: #14192A;' id="header">
+
+  <div  class="container">
+
+    <div id="logo" class="pull-left">
+      <!-- Uncomment below if you prefer to use a text logo -->
+      <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+      <a href="#intro" class="scrollto"><img src="{{ url_for('static', filename='logo.jpg') }}" alt="" title=""></a>
+    </div>
+
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        {% if request.path == '/index.html' %}
+          <li class="menu-active"><a href="index.html">Home</a></li>
+        {% else %}
+          <li><a href="index.html">Home</a></li>
+        {% endif %}
+
+        {% if request.path == '/pro_gun_control.html' %}
+          <li class="menu-active"><a href="pro_gun_control.html">Against CP & For GC</a></li>
+        {% else %}
+          <li><a href="pro_gun_control.html">Against CP & For GC</a></li>
+        {% endif %}
+
+        {% if request.path == '/against_gun_control.html' %}
+          <li class="menu-active"><a href="against_gun_control.html">For CP & Against GC</a></li>
+        {% else %}
+          <li><a href="against_gun_control.html">For CP & Against GC</a></li>
+        {% endif %}
+
+        {% if request.path == '/Compare.html' %}
+          <li class="menu-active"><a href="Compare.html">Compare</a></li>
+        {% else %}
+          <li><a href="Compare.html">Compare</a></li>
+        {% endif %}
+
+        {% if request.path == '/Bot_Code.html' %}
+          <li class="menu-active"><a href="Bot_Code.html">Bot Code</a></li>
+        {% else %}
+          <li><a href="Bot_Code.html">Bot Code</a></li>
+        {% endif %}
+
+        {% if request.path == '/Tweepy_Problems.html' %}
+          <li class="menu-active"><a href="Tweepy_Problems.html">Tweepy Problems</a></li>
+        {% else %}
+          <li><a href="Tweepy_Problems.html">Tweepy Problems</a></li>
+        {% endif %}
+
+
+      </ul>
+    </nav><!-- #nav-menu-container -->
+  </div>
+</header><!-- #header -->

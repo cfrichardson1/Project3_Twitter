@@ -250,9 +250,15 @@ h6 {
 #nav-menu-container {
   float: right;
   margin: 0;
+
 }
 
 /* Nav Meu Styling */
+#navbar {
+  color: #fff;
+
+
+}
 
 .nav-menu a {
   padding: 8px;
